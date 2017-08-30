@@ -4,7 +4,7 @@ public class MainHomeworkClass {
 
     public static void main(String[] args) {
 
-        Person[] allPerson = new Person[4];
+        Person[] allPerson = new Person[4];// создаю массив объектов типа персон
 
         allPerson[0] = new Person("CoachBob",27,"M");
         allPerson[1] = new Student("Lynne Brook",16,"F","HS95129",3.5);
