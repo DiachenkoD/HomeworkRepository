@@ -28,13 +28,11 @@ public class MainHomeworkClass {
         int year = 0;
         String major = new String();
 
-        String informatioString = FileWorker.read("sobaka.txt");
-        String[] koma = new String[7];
-        koma = informatioString.split(",");
-        String[] s = new String[2];
-        for (int i = 0; i< koma.length; i++){
+        String informationString = FileWorker.read("sobaka.txt");
+        String[] coma = informationString.split(",");
+        for (String field: coma){
 
-            s = koma[i].split(":");
+            String[] s = field.split(":");
             switch(s[0]){
                 case "name":{
                     name = s[1];
@@ -71,9 +69,5 @@ public class MainHomeworkClass {
         student.toString();
 
     }
-
-
-
-
-
+    
 }
